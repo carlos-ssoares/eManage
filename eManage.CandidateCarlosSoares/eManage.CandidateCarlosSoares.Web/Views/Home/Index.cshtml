@@ -1,0 +1,146 @@
+﻿<!-- jQuery -->
+    <script src="~/vendors/jquery/dist/jquery.min.js"></script>
+
+@{
+    ViewBag.Title = "";
+}
+
+@*Load the list of Users from the data base.*@
+<div ng-init="loadUsers()"></div>
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+            <h2>@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.UserList.ToString())</h2>
+            <ul class="nav navbar-right panel_toolbox">
+                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                    @*Load the list of Users from the data base.*@
+                    <li><a href="#" ng-click="loadUsers()">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Refresh.ToString())</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter" ng-click="InsertUser()">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.NewUser.ToString())</a></li>
+                </ul>
+                </li>
+                <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+            </ul>
+            <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+            
+                <div class="form-group">
+                    <div class="col-sm-2">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" ng-click="InsertUser()">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.NewUser.ToString())</button>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <input type="text" ng-model="filterId" placeholder="Id" class="form-control">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-primary" ng-click="GetUser(filterId)">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Search.ToString())</button>
+                            </span>
+                        </div>
+                    </div>
+                
+                    <div class="col-sm-5">
+                        <input type="text" ng-model="filterName" placeholder="@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Name.ToString())" class="form-control">
+                    </div>
+                </div>
+
+                <table  class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>ID</th>
+                        <th>@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Name.ToString())</th>
+                        <th>@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Age.ToString())</th>
+                        <th>@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Address.ToString())</th>
+                    </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr ng-repeat="user in users | orderBy:'Name' | filter:filterName">
+                            <td>
+                                <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-xs" type="button" aria-expanded="false">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Actions.ToString()) <span class="caret"></span>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu">
+                                      <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter" ng-click="UpdateUser(user)">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Update.ToString())</a></li>
+                                      <li><a href="#" data-toggle="modal" data-target="#ModelDelete" ng-click="Delete(user)">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Delete.ToString())</a></li>
+                                    </ul>
+                                </div>
+
+                            </td>
+                            <td>{{user.UserId}}</td>
+                            <td>{{user.Name}}</td>
+                            <td>{{user.Age}}</td>
+                            <td>{{user.Address}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.UserDetailTittle.ToString())</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <div class="form-group">
+                <label>Id</label>
+                <input type="text" class="form-control" required="required" placeholder="Id" ng-model="uUser.UserId" disabled="disabled" />
+            </div>
+
+            <div class="form-group">
+                <label>@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Name.ToString()) *</label>
+                <input type="text" class="form-control" required="required" maxlength="50" placeholder="@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Name.ToString())" ng-model="uUser.Name" />
+            </div>
+
+            <div class="form-group">
+                <label>@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Age.ToString()) *</label>
+                <input type="number" required="required" min="0" max="100" class="form-control col-md-7 col-xs-12" ng-model="uUser.Age" placeholder="@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Age.ToString())">
+            </div>
+
+            <div class="form-group">
+                <label>@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Address.ToString())</label>
+                <input type="text" class="form-control" maxlength="50" placeholder="@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Address.ToString())" ng-model="uUser.Address" />
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Close.ToString())</button>
+        <button type="button" class="btn btn-primary" ng-click="SaveUser(uUser)">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Save.ToString())</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="ModelDelete" tabindex="-1" role="dialog" aria-labelledby="ModelDeleteTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModelDeleteTitle">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.DeleteTittle.ToString())</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        @(eManage.CandidateCarlosSoares.Shared.Resources.Labels.DeleteQuestion.ToString())
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Cancel.ToString())</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="DeleteUser(uUser)">@(eManage.CandidateCarlosSoares.Shared.Resources.Labels.Delete.ToString())</button>
+      </div>
+    </div>
+  </div>
+</div>

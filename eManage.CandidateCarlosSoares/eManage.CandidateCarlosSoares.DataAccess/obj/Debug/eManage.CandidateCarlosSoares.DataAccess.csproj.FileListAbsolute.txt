@@ -1,0 +1,13 @@
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\bin\Debug\eManage.CandidateCarlosSoares.DataAccess.dll.config
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\bin\Debug\eManage.CandidateCarlosSoares.DataAccess.dll
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\bin\Debug\eManage.CandidateCarlosSoares.DataAccess.pdb
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\bin\Debug\eManage.CandidateCarlosSoares.Shared.dll
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\bin\Debug\EntityFramework.dll
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\bin\Debug\eManage.CandidateCarlosSoares.Shared.pdb
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\bin\Debug\EntityFramework.xml
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\bin\Debug\pt-br\eManage.CandidateCarlosSoares.Shared.resources.dll
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\obj\Debug\eManage.CandidateCarlosSoares.DataAccess.csprojResolveAssemblyReference.cache
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\obj\Debug\eManage.CandidateCarlosSoares.DataAccess.dll
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.DataAccess\obj\Debug\eManage.CandidateCarlosSoares.DataAccess.pdb

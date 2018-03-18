@@ -1,0 +1,16 @@
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\bin\Debug\eManage.CandidateCarlosSoares.Shared.dll.config
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\bin\Debug\eManage.CandidateCarlosSoares.Shared.dll
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\bin\Debug\eManage.CandidateCarlosSoares.Shared.pdb
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\bin\Debug\pt-br\eManage.CandidateCarlosSoares.Shared.resources.dll
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\bin\Debug\EntityFramework.dll
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\bin\Debug\EntityFramework.SqlServer.dll
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\bin\Debug\EntityFramework.xml
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\bin\Debug\EntityFramework.SqlServer.xml
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\obj\Debug\eManage.CandidateCarlosSoares.Shared.Resources.Labels.resources
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\obj\Debug\eManage.CandidateCarlosSoares.Shared.Resources.Messages.resources
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\obj\Debug\eManage.CandidateCarlosSoares.Shared.Resources.Labels.pt-br.resources
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\obj\Debug\eManage.CandidateCarlosSoares.Shared.Resources.Messages.pt-br.resources
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\obj\Debug\eManage.CandidateCarlosSoares.Shared.csproj.GenerateResource.Cache
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\obj\Debug\pt-br\eManage.CandidateCarlosSoares.Shared.resources.dll
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\obj\Debug\eManage.CandidateCarlosSoares.Shared.dll
+C:\_Projetos\_TecnicalTestes\eManage\eManage.CandidateCarlosSoares\eManage.CandidateCarlosSoares.Shared\obj\Debug\eManage.CandidateCarlosSoares.Shared.pdb
